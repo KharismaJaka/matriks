@@ -29,8 +29,24 @@ void tambah(int matriks1[3][3], int matriks2[3][3], int hasil[3][3]) {
     }
 }
 
+void kali(int matriks1[3][3], int matriks2[3][3], int hasil[3][3]) {
+   for (int i = 0; i < 3; i++) {
+       for (int j = 0; j < 3; j++) {
+           hasil[i][j] = 0;
+           for (int k = 0; k < 3; k++) {
+                hasil[i][j] += matriks1[i][k] * matriks2[k][j];
+           }
+       }
+   }
+}
 
-
+void transpose(int matriks[3][3], int hasil [3][3]) {
+   for (int i = 0; i < 3; i++) {
+       for (int j = 0; j < 3; j++) {
+           hasil[j][i] = matriks[i][j];
+       }
+   }
+}
 
 int main(){
   
