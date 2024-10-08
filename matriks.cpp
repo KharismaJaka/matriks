@@ -68,7 +68,7 @@ int main(){
     transpose (matriks1, transposee);
     matrikskeluar (transposee, "transpose matriks pertama");
     transpose (matriks2, transposee);
-    matrikskeluar (transposee, "transpose matriks kedua"
+    matrikskeluar (transposee, "transpose matriks kedua");
 
         return 0;
 }
