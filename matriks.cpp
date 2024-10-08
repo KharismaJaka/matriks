@@ -21,6 +21,14 @@ void matrikskeluar (int matriks[3][3], char nama[]) {
     }
 }
 
+void tambah(int matriks1[3][3], int matriks2[3][3], int hasil[3][3]) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            hasil[i][j] = matriks1[i][j] + matriks2[i][j];
+        }
+    }
+}
+
 
 
 
